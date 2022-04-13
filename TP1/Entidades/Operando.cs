@@ -122,7 +122,10 @@ namespace Entidades
             }
             binarioInvertido.Append(dividendo.ToString());
 
-            binario = invertirString(binarioInvertido.ToString());
+            // invierto el string
+            char[] arrayDeCaracteres = binarioInvertido.ToString().ToCharArray();
+            Array.Reverse(arrayDeCaracteres);
+            binario = new string(arrayDeCaracteres);
 
             return binario;
 
@@ -145,7 +148,11 @@ namespace Entidades
                 }
                 binarioInvertido.Append(dividendo.ToString());
 
-                binario = invertirString(binarioInvertido.ToString());
+                // invierto el string
+                char[] arrayDeCaracteres = binarioInvertido.ToString().ToCharArray();
+                Array.Reverse( arrayDeCaracteres );
+                binario = new string(arrayDeCaracteres);
+
             }
             else
             {
@@ -154,17 +161,6 @@ namespace Entidades
 
             return binario;
 
-        }
-        public static string invertirString(string stringAInvertir)
-        {
-            StringBuilder stringbuilder = new StringBuilder();
-
-            for (int i = stringAInvertir.Length - 1; i >= 0; i--)
-            {
-                stringbuilder.Append(stringAInvertir[i]);
-            }
-
-            return stringbuilder.ToString();
         }
     }
 }
