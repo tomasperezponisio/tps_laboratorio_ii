@@ -19,7 +19,11 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Llama a la funcion limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -27,6 +31,9 @@ namespace MiCalculadora
             this.btnConvertirABinario.Enabled = false;
             this.btnConvertirADecimal.Enabled = false;
         }
+        /// <summary>
+        /// Pone en "vacio" los campos del formulario
+        /// </summary>
         private void Limpiar()
         {
             this.txtNumero1.Text = "";
@@ -36,7 +43,11 @@ namespace MiCalculadora
             this.cmbOperador.SelectedIndex = this.cmbOperador.FindStringExact(" ");
             this.lstOperaciones.Items.Clear();
         }
-
+        /// <summary>
+        /// Al iniciar el formulario deshabilita los botones para vonertir decimal-binario y pone el operador en blanco
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             Limpiar();
@@ -46,7 +57,11 @@ namespace MiCalculadora
             this.btnConvertirABinario.Enabled = false;
             this.btnConvertirADecimal.Enabled = false;
         }
-
+        /// <summary>
+        /// Es la funcion que se llama al cerrar el form, pide confirmacion para cerrar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>        
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -58,12 +73,20 @@ namespace MiCalculadora
                 }
             }
         }
-
+        /// <summary>
+        /// Llama a la funcion para cerrar, pide confirmacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Valida si se va a dividir por cero, llama a la funcion operar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {            
             // si no se cargó nada en los operandos y el operador, muestro 0 + 0
@@ -105,6 +128,13 @@ namespace MiCalculadora
                 this.btnConvertirADecimal.Enabled = true;
             }
         }
+        /// <summary>
+        /// Recibe operandos y operador , y usa la funcion operar de la clase calculadora
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             Operando n1 = new Operando(numero1);
@@ -113,6 +143,11 @@ namespace MiCalculadora
             double resultado = Calculadora.Operar(n1, n2, operadorChar);
             return resultado;
         }
+        /// <summary>
+        /// Llama a la funcion para convertir de decimal a binario, avisa que no se puede en caso que no se pueda
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             if (this.lblResultado.Text != "")
@@ -133,7 +168,11 @@ namespace MiCalculadora
                 this.lblResultado.Text = numeroBinario;
             }
         }
-
+        /// <summary>
+        /// Llama a la funcion para convertir de binario a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             if (this.lblResultado.Text != "")

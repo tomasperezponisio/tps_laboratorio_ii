@@ -30,6 +30,11 @@ namespace Entidades
         }
 
         // Metodos
+        /// <summary>
+        /// Valida el operando que recibe, si no es un numero devuelve 0
+        /// </summary>
+        /// <param name="strNumero"> El operando a validar, es del tipo string</param>
+        /// <returns> Devuelve en double el operando que recibe</returns>
         private double ValidarOperando(string strNumero)
         {
             double numero;
@@ -65,6 +70,11 @@ namespace Entidades
             }
             return resultado;
         }
+        /// <summary>
+        /// Checkea que el string que recibe son 0 y 1
+        /// </summary>
+        /// <param name="binario">Recibe un numero en string</param>
+        /// <returns>devuelve true si el string recibido esta compuesto por 0 y 1, false en caso contrario</returns>
         private bool EsBinario(string binario)
         {
             bool resultado = true;
@@ -77,6 +87,11 @@ namespace Entidades
             }
             return resultado;
         }
+        /// <summary>
+        /// De ser posible convierte a Decimal el numero recibido, todo de tipo string, si no se puede devuelve un mensaje de error
+        /// </summary>
+        /// <param name="binario"> Recibe un numero a convertir, es de tipo string</param>
+        /// <returns> Devuelve el numero en decimal o un mensaje de error si no se pudo convertir</returns>
         public string BinarioDecimal(string binario)
         {
             string resultado;
@@ -107,6 +122,11 @@ namespace Entidades
 
             return resultado;
         }
+        /// <summary>
+        /// De ser posible convierte a binario el numero recibido (en double),
+        /// </summary>
+        /// <param name="numero"> Recibe un numero a convertir, es de tipo double </param>
+        /// <returns> Devuelve el numero en decimal  </returns>
         public string DecimalBinario(double numero)
         {            
             StringBuilder binarioInvertido = new StringBuilder();
@@ -130,6 +150,11 @@ namespace Entidades
             return binario;
 
         }
+        /// <summary>
+        /// De ser posible convierte a binario el numero recibido (en string), si no se puede devuelve un mensaje de error
+        /// </summary>
+        /// <param name="numero"> Recibe un numero a convertir, es de tipo string </param>
+        /// <returns> Devuelve el numero en binario (string) o un mensaje de error si no se pudo convertir </returns>
         public string DecimalBinario(string numero)
         {
             bool resultado = double.TryParse(numero, out double numeroDouble);
