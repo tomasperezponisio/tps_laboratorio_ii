@@ -88,7 +88,7 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
-        {            
+        {
             // si no se cargó nada en los operandos y el operador, muestro 0 + 0
             if (this.txtNumero1.Text == "")
             {
@@ -101,6 +101,11 @@ namespace MiCalculadora
             if (this.cmbOperador.SelectedIndex == 0)
             {
                 this.cmbOperador.SelectedIndex = 1;
+            }
+            // si en los operandos no hay un numero tiro alerta y aviso
+            if (!double.TryParse(this.txtNumero1.Text, out double resultado1) || !double.TryParse(this.txtNumero2.Text, out double resultado2))
+            {
+                MessageBox.Show("Por favor ingrese un numero valido", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             // tomo los valores de los operandos
             string numero1 = this.txtNumero1.Text;
@@ -116,7 +121,6 @@ namespace MiCalculadora
             }
             else // si no, opero normal
             {
-
                 // mando a operar
                 double resultado = Operar(numero1, numero2, operador);
                 // Mando el resultado al label de resultado
