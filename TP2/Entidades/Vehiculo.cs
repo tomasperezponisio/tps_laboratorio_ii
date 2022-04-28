@@ -18,8 +18,7 @@ namespace Entidades
         // atributos
         private EMarca marca;
         private string chasis;
-        private ConsoleColor color;
-        private ETamanio tamanio;
+        private ConsoleColor color;       
 
         // constructor
         public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
