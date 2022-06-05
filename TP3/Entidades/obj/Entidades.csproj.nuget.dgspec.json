@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\TP3\\Entidades\\Entidades.csproj": {}
+    "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp3_pruebas\\ClubArmenio\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\TP3\\Entidades\\Entidades.csproj": {
+    "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp3_pruebas\\ClubArmenio\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\TP3\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp3_pruebas\\ClubArmenio\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\TP3\\Entidades\\Entidades.csproj",
+        "projectPath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp3_pruebas\\ClubArmenio\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Tomas\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\TP3\\Entidades\\obj\\",
+        "outputPath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp3_pruebas\\ClubArmenio\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
