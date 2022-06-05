@@ -244,4 +244,13 @@
       </Cuota>
     </HistorialDePagos>
   </Socio>
+  <Socio>
+    <Nombre>Nilda</Nombre>
+    <Apellido>Artica</Apellido>
+    <Dni>40156235</Dni>
+    <FechaNacimiento>1995-07-19T19:34:49</FechaNacimiento>
+    <Actividad>Voley</Actividad>
+    <Categoria>Mayor</Categoria>
+    <HistorialDePagos />
+  </Socio>
 </ArrayOfSocio>
