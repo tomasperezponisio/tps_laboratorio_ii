@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "US/FMaeNACLmwvJneFfR07VoXkM90USrEq77p/BNDlfgf0Shd+UfrnYCa0qU8XIjbqphPKuV0sK/k7vHG/bLig==",
+  "dgSpecHash": "xt0aSA+0jz4zHYWvxoS9PuzQjnHc4lvHUoW0+YAm0GDmYq404131FKycrELDFKyJZa8mny9n8QRHY4dmoq6jRQ==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tp4_pruebas\\TP4\\Entidades\\Entidades.csproj",
+  "projectFilePath": "G:\\My Drive\\_UTN\\Laboratorio - Programacion II\\tps_laboratorio_ii\\TP4\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomas\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Tomas\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

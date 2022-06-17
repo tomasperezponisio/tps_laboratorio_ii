@@ -37,7 +37,6 @@
             this.btnEstadoDeCuenta = new System.Windows.Forms.Button();
             this.btnExportar = new System.Windows.Forms.Button();
             this.btnLeerSql = new System.Windows.Forms.Button();
-            this.btnEscribirSQL = new System.Windows.Forms.Button();
             this.lblCargando = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +53,7 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(12, 140);
+            this.btnCargar.Location = new System.Drawing.Point(12, 141);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(139, 23);
             this.btnCargar.TabIndex = 23;
@@ -75,7 +74,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(12, 169);
+            this.btnModificar.Location = new System.Drawing.Point(12, 170);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(139, 23);
             this.btnModificar.TabIndex = 31;
@@ -85,7 +84,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 256);
+            this.btnEliminar.Location = new System.Drawing.Point(12, 257);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(139, 23);
             this.btnEliminar.TabIndex = 32;
@@ -95,7 +94,7 @@
             // 
             // btnPagarCuota
             // 
-            this.btnPagarCuota.Location = new System.Drawing.Point(12, 227);
+            this.btnPagarCuota.Location = new System.Drawing.Point(12, 228);
             this.btnPagarCuota.Name = "btnPagarCuota";
             this.btnPagarCuota.Size = new System.Drawing.Size(139, 23);
             this.btnPagarCuota.TabIndex = 33;
@@ -105,7 +104,7 @@
             // 
             // btnEstadoDeCuenta
             // 
-            this.btnEstadoDeCuenta.Location = new System.Drawing.Point(12, 198);
+            this.btnEstadoDeCuenta.Location = new System.Drawing.Point(12, 199);
             this.btnEstadoDeCuenta.Name = "btnEstadoDeCuenta";
             this.btnEstadoDeCuenta.Size = new System.Drawing.Size(139, 23);
             this.btnEstadoDeCuenta.TabIndex = 34;
@@ -115,7 +114,7 @@
             // 
             // btnExportar
             // 
-            this.btnExportar.Location = new System.Drawing.Point(12, 285);
+            this.btnExportar.Location = new System.Drawing.Point(12, 286);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(139, 23);
             this.btnExportar.TabIndex = 35;
@@ -125,22 +124,13 @@
             // 
             // btnLeerSql
             // 
-            this.btnLeerSql.Location = new System.Drawing.Point(12, 314);
+            this.btnLeerSql.Location = new System.Drawing.Point(12, 315);
             this.btnLeerSql.Name = "btnLeerSql";
             this.btnLeerSql.Size = new System.Drawing.Size(139, 23);
             this.btnLeerSql.TabIndex = 36;
             this.btnLeerSql.Text = "Leer Base de Datos SQL";
             this.btnLeerSql.UseVisualStyleBackColor = true;
             this.btnLeerSql.Click += new System.EventHandler(this.btnLeerSql_Click);
-            // 
-            // btnEscribirSQL
-            // 
-            this.btnEscribirSQL.Location = new System.Drawing.Point(12, 343);
-            this.btnEscribirSQL.Name = "btnEscribirSQL";
-            this.btnEscribirSQL.Size = new System.Drawing.Size(139, 23);
-            this.btnEscribirSQL.TabIndex = 37;
-            this.btnEscribirSQL.Text = "Guardar Base de Datos";
-            this.btnEscribirSQL.UseVisualStyleBackColor = true;
             // 
             // lblCargando
             // 
@@ -157,9 +147,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1084, 379);
+            this.ClientSize = new System.Drawing.Size(1084, 355);
             this.Controls.Add(this.lblCargando);
-            this.Controls.Add(this.btnEscribirSQL);
             this.Controls.Add(this.btnLeerSql);
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.btnEstadoDeCuenta);
@@ -193,7 +182,6 @@
         private System.Windows.Forms.Button btnEstadoDeCuenta;
         private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.Button btnLeerSql;
-        private System.Windows.Forms.Button btnEscribirSQL;
         private System.Windows.Forms.Label lblCargando;
     }
 }
