@@ -18,8 +18,8 @@ namespace Test
         {
             //Arrange
             Socio socio = new Socio("Juan", "Perez", 123, new DateTime(2000, 01, 01), Socio.EActividad.Basquet, Socio.ECategoria.Joven);
-            Cuota cuota1 = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2010, 01, 01));
-            Cuota cuota2 = new Cuota(Cuota.EMetodoDePago.Debito, 2000, Socio.EActividad.Futbol, new DateTime(2010, 01, 01));
+            Cuota cuota1 = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2010, 01, 01), 321443243);
+            Cuota cuota2 = new Cuota(Cuota.EMetodoDePago.Debito, 2000, Socio.EActividad.Futbol, new DateTime(2010, 01, 01), 31443243);
             bool ingresoCuota1 = (socio + cuota1);
             bool evaluate;
 
@@ -31,7 +31,7 @@ namespace Test
         {
             //Arrange            
             Socio socio = new Socio("Juan", "Perez", 123, new DateTime(2000, 01, 01), Socio.EActividad.Basquet, Socio.ECategoria.Joven);
-            Cuota cuota = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2022, 06, 01));
+            Cuota cuota = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2022, 06, 01), 31443243);
             bool ingresoCuota = (socio + cuota);
             bool expected = true;
             bool actual;
@@ -46,8 +46,8 @@ namespace Test
         public void SobreCargaOperadorIgualdadDeCuota_CuandoDosCuotasTienenIgualMesYAnio_DeberiaRetornarTrue()
         {
             //Arrange            
-            Cuota cuota1 = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2010, 01, 01));
-            Cuota cuota2 = new Cuota(Cuota.EMetodoDePago.Debito, 2000, Socio.EActividad.Futbol, new DateTime(2010, 01, 01));
+            Cuota cuota1 = new Cuota(Cuota.EMetodoDePago.Efectivo, 1000, Socio.EActividad.Basquet, new DateTime(2010, 01, 01), 31443243);
+            Cuota cuota2 = new Cuota(Cuota.EMetodoDePago.Debito, 2000, Socio.EActividad.Futbol, new DateTime(2010, 01, 01), 31443243);
             bool expected = true;
             bool actual;
 
